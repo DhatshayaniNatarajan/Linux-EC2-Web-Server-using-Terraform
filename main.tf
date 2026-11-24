@@ -82,4 +82,8 @@ resource "aws_instance" "web" {
   tags = {
     Name = "Terraform-WebServer"
   }
+   tags = {
+  Name    = "Terraform-WebServer"
+  Project = "Project11"
+}
 }
