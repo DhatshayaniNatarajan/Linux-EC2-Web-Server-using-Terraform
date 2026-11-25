@@ -79,11 +79,9 @@ resource "aws_instance" "web" {
 
   user_data = file("userdata.sh")
 
+
   tags = {
-    Name = "Terraform-WebServer"
+    Name    = "Terraform-WebServer"
+    Project = "Project11"
   }
-   tags = {
-  Name    = "Terraform-WebServer"
-  Project = "Project11"
-}
 }
